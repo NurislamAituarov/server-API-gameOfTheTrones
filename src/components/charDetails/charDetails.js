@@ -1,6 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
-import Spinner from '../spinner/spinner';
-import Error from '../error/error';
+import React, { useState, useEffect } from 'react';
 import s from './charDetails.module.css';
 
 const CharDetails = () => {
@@ -31,8 +29,7 @@ const CharDetails = () => {
             }
         })
     }
-    const onDelid = (id) => {
-        console.log(id)
+    const onDelete = (id) => {
         setState(({ arr }) => {
             const index = arr.findIndex(item => item.id === id);
             const newArr = [...arr.slice(0, index), ...arr.slice(index + 1)]
@@ -89,7 +86,7 @@ const CharDetails = () => {
             <div className={s.charDetails}>
                 <Content
                     arr={allElements}
-                    onDelid={onDelid}
+                    onDelete={onDelete}
                     // onLiked={onLiked}
                     onMarked={onMarked}
                 />
@@ -166,7 +163,7 @@ const Content = (props) => {
                     item={item}
                     marked={item.marked}
                     onLiked={() => props.onMarked(item.id)}
-                    onDelid={() => props.onDelid(item.id)}
+                    onDelete={() => props.onDelete(item.id)}
                 />
             </li>
         )
@@ -177,7 +174,7 @@ const Content = (props) => {
         </ul>
     )
 }
-const ItemContent = ({ item, marked, onDelid, onLiked }) => {
+const ItemContent = ({ item, marked, onDelete, onLiked }) => {
     let style = 'style'
     if (marked) {
         style = 'newLi'
@@ -187,7 +184,7 @@ const ItemContent = ({ item, marked, onDelid, onLiked }) => {
             <strong className={s[style]}>{item.name}</strong>
             <div>
                 <button className={s.btn} onClick={onLiked}>like</button>
-                <button className={s.btn} onClick={onDelid}>&times;</button>
+                <button className={s.btn} onClick={onDelete}>&times;</button>
             </div>
         </>
 
