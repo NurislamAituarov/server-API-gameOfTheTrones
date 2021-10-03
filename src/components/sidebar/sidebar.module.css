@@ -1,0 +1,17 @@
+.sidebar{
+    width: 430px;
+    height: max-content;
+    padding: 10px;
+    color: blanchedalmond;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0);
+}
+h3{
+    color: white;
+}
+.h2{
+    text-align: center;
+}
+.please{
+    color: rgb(151, 151, 151);
+    font-size: 30px;
+}

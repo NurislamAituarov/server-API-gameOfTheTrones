@@ -1,0 +1,9 @@
+.error span{
+    font-size: 25px;
+    color: red;
+    text-decoration: underline;
+}
+.error{
+    width: max-content;
+    margin: 0 auto;
+}

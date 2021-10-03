@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 240px;
+    max-width: 370px;
+    padding: 20px;
+    color: blanchedalmond;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0);
+    position: relative;
+}
+h4{
+    margin: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+    padding: 5px;
+}

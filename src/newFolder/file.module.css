@@ -1,0 +1,83 @@
+.box{
+    width: 600px;
+    min-height: 300px;
+    background-color: rgb(92, 92, 92);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ul{
+    box-sizing: border-box;
+    display: block;
+    max-width: 500px;
+    margin: 10% auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.li{
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    /* background-color: white; */
+}
+.li button{
+    cursor: pointer;
+}
+.basket{
+    background-image: url('http://d2j6dbq0eux0bg.cloudfront.net/startersite/images/16473902/1550491977092.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position:fixed;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    min-height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.basket h3{
+    color: black;
+}
+.basket button{
+    padding: 5px;
+    background-color: black;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+.basket button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/* ////////////////form */
+.form{
+    width: 200px;
+    padding: 10px;
+    background-image: url('https://www.etagi.ru/upload/resize_cache/iblock/f63/1200_1200_1/Attachment_1-_1_.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+/* .form h3{
+    color: black;
+} */
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.form button{
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    color: blanchedalmond;
+}
+/*  */
+.span{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}

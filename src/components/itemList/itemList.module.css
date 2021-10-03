@@ -1,0 +1,28 @@
+.li{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.li:hover{
+    color: rgb(151, 151, 151);
+}
+.itemList{
+    width: 400px;
+    padding: 15px;
+    box-shadow: -3px -3px 5px 1px black;
+    color: beige;
+}
+.itemList a{
+    font-size: 20px;
+    color: white;
+}
+.h2{
+    text-align: start;
+    color: rgb(131, 131, 131);
+    font-size: 25px;
+}
+.itemName{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
